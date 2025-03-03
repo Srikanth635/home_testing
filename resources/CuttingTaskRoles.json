@@ -1,0 +1,116 @@
+{
+    "CuttingTask": {
+        "Roles": {
+            "Agent": {
+                "Description": "The entity that performs the action of cutting.",
+                "Characteristics": [
+                    "Performs the intentional act of cutting.",
+                    "Can be human, animal, or machine."
+                ],
+                "Examples": [
+                    "A chef cutting vegetables.",
+                    "A laser machine cutting metal."
+                ]
+            },
+            "Object": {
+                "Description": "The item or material being acted upon that undergoes separation or division.",
+                "Characteristics": [
+                    "Directly affected by the cutting action.",
+                    "Its physical structure is altered as a result."
+                ],
+                "Examples": [
+                    "A loaf of bread.",
+                    "Fabric, paper, or tree branches."
+                ]
+            },
+            "Tool": {
+                "Description": "The implement or means used to perform the cutting action.",
+                "Characteristics": [
+                    "A sharp-edged or specialized instrument.",
+                    "Facilitates force or precision by the agent."
+                ],
+                "Examples": [
+                    "Knife, scissors, axe, saw.",
+                    "Laser cutter."
+                ]
+            },
+            "Location": {
+                "Description": "The spatial setting where the cutting action occurs.",
+                "Characteristics": [
+                    "Provides context for the action.",
+                    "Influences tools and methods used."
+                ],
+                "Examples": [
+                    "Kitchen countertop.",
+                    "Factory or forest."
+                ]
+            },
+            "Goal": {
+                "Description": "The intended result or purpose of the cutting action.",
+                "Characteristics": [
+                    "Motivates the action.",
+                    "Relates to creating smaller pieces, shapes, or components."
+                ],
+                "Examples": [
+                    "Preparing food.",
+                    "Crafting a sculpture or harvesting crops."
+                ]
+            },
+            "Result": {
+                "Description": "The state or condition of the object after the cutting action.",
+                "Characteristics": [
+                    "Describes how the object has been transformed.",
+                    "Details size, shape, or usability."
+                ],
+                "Examples": [
+                    "Sliced bread.",
+                    "Trimmed branches or cut fabric patterns."
+                ]
+            },
+            "Force": {
+                "Description": "The physical energy applied to enable the cutting action.",
+                "Characteristics": [
+                    "Can be manual, mechanical, or electrical.",
+                    "Depends on the tool used."
+                ],
+                "Examples": [
+                    "Hand pressure on a knife.",
+                    "Motor power in a chainsaw or laser energy."
+                ]
+            },
+            "Circumstances": {
+                "Description": "Additional contextual details surrounding the cutting action.",
+                "Characteristics": [
+                    "Includes method, speed, or timing.",
+                    "Adds situational nuance."
+                ],
+                "Examples": [
+                    "Carefully slicing vegetables thinly.",
+                    "Quickly cutting paper in an arts-and-crafts session."
+                ]
+            },
+            "Recipient": {
+                "Description": "The entity that benefits from or receives the results of the cutting action.",
+                "Characteristics": [
+                    "Optional, sometimes implicit or secondary.",
+                    "May influence how the action is performed."
+                ],
+                "Examples": [
+                    "A diner receiving sliced steak.",
+                    "A customer buying trimmed lumber."
+                ]
+            },
+            "Medium": {
+                "Description": "The substance or environment through which the tool operates to perform the cut.",
+                "Characteristics": [
+                    "Relevant for specialized scenarios.",
+                    "Defines operational context."
+                ],
+                "Examples": [
+                    "Water in water-jet cutting.",
+                    "Air in laser cutting."
+                ]
+            }
+        }
+    }
+}
