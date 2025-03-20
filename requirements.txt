@@ -3,3 +3,5 @@ langchain==0.3.19
 langchain-community==0.3.18
 langchain-openai==0.3.7
 langgraph-checkpoint-sqlite==2.0.5
+grandalf
+ipykernel
