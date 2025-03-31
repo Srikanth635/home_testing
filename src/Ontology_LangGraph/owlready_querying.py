@@ -110,7 +110,6 @@ def create_dummy_ontology(file_path):
         has_pet.range = [Animal]
     onto.save(file_path)
 
-
 if __name__ == "__main__":
     # Example Usage
     ontology_file = "OWLs/SOMA.owl"

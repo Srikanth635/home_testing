@@ -134,7 +134,8 @@ def stream_graph_updates(user_input: str):
                         print(f"Tool Message: {last_message.content}")
 
 #10. Example Usage
-stream_graph_updates("2 times 3 times 4")
+inputs = input()
+stream_graph_updates(inputs)
 # ans = graph.invoke({"messages" : [HumanMessage(content="navigating")]})
 # # print(ans['messages'])
 # for msg in ans['messages']:

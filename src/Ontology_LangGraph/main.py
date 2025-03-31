@@ -52,7 +52,14 @@ find_relevant_classes_tool = Tool.from_function(
     name="find_relevant_classes",
     description="Finds classes relevant to the user query."
 )
-tools = [find_relevant_classes_tool]
+
+calculator = Tool.from_function(
+    func= lambda x,y: x*y,
+    name="calculate",
+    description="multiply two numbers"
+)
+
+tools = [find_relevant_classes_tool, calculator]
 
 # Prompt.
 prompt = ChatPromptTemplate.from_messages([
@@ -91,8 +98,8 @@ workflow.set_entry_point("agent")
 # chain = RunnableWithMessageHistory(workflow.compile(), get_session_history=get_session_history)
 
 if __name__ == "__main__":
-
-    inputs = {"messages": [HumanMessage(content="grasp")], "intermediate_steps": []}
+    input_content = input(f"Enter the input search keyword: ")
+    inputs = {"messages": [HumanMessage(content=input_content)], "intermediate_steps": []}
 
     graph = workflow.compile()
     print(graph.get_graph().draw_ascii())
@@ -101,11 +108,11 @@ if __name__ == "__main__":
     # result = chain.invoke(inputs, config={"configurable": {"session_id": "<foo>"}})
     # result = graph.invoke(input=inputs)
 
-    # for output in graph.stream(inputs):
-    #     for key, value in output.items():
-    #         if isinstance(value, dict) and "messages" in value:
-    #             for message in value["messages"]:
-    #                 if isinstance(message, AIMessage):
-    #                     print(f"Assistant Response: {message.content}")
+    for output in graph.stream(inputs):
+        for key, value in output.items():
+            if isinstance(value, dict) and "messages" in value:
+                for message in value["messages"]:
+                    if isinstance(message, AIMessage):
+                        print(f"Assistant Response: {message.content}")
 
     # print(result)
