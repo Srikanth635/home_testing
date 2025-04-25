@@ -5,3 +5,4 @@ langchain-openai==0.3.7
 langgraph-checkpoint-sqlite==2.0.5
 grandalf
 ipykernel
+numpy
